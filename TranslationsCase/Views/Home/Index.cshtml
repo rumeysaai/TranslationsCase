@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    @model TranslationsCase.Models.HomeModel
+}
+
+<div class="header"><h1>English to Valyrian</h1></div>
+<form action="#" method="post">
+    <div class="entext">
+        <label>English</label>
+        <input type="text" name="eng" />
+    </div>
+    <div class="valtext">
+        <label>Valyrian</label>
+        <textarea name="val" readonly>@Model.ResultText </textarea>
+    </div>
+    <div class="btn">
+        <input type="submit" class="btn btn-primary btn-lg" value="Translate" />
+    </div>
+</form>
+
